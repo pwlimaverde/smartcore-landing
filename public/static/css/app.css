@@ -317,3 +317,19 @@ input[type="checkbox"] {
   height: 16px;
   accent-color: var(--brand-primary);
 }
+
+/* ----------------------------- */
+/* Custom Animations             */
+/* ----------------------------- */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.1;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
